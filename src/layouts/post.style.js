@@ -29,10 +29,11 @@ export const StyledSectionLayout = styled(SectionLayout)`
 
   .author,
   .date {
-    font-size: 12px;
+    margin-top: 10px;
+    font-size: 15px;
   }
 
-  .date {
-    margin-left: 20px;
+  img {
+    margin: 25px 0;
   }
 `

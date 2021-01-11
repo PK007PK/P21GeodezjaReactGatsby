@@ -1,10 +1,10 @@
 import React from "react"
-import { StyledDiv, StyledSpan } from "./Logo.style"
+import { LogoStyle } from "./Logo.style"
 
-const Logo = ({ className }) => (
-  <StyledDiv className={className}>
-    <StyledSpan>GEO</StyledSpan>
-  </StyledDiv>
+const Logo = ({ className, style }) => (
+  <LogoStyle style={style} className={className}>
+    <i class="fas fa-drafting-compass"></i>GPI
+  </LogoStyle>
 )
 
 export default Logo

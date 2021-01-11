@@ -37,7 +37,7 @@ const TopMenuBar = ({ className }) => (
         </li>
         <li>
           <Link
-            to="/contact"
+            to="/#kontakt"
             activeStyle={{
               fontWeight: "bold",
             }}

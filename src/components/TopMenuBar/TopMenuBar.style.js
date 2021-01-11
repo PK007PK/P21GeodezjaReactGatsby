@@ -20,7 +20,7 @@ export const StyledLogo = styled(Logo)`
 export const StyledWrapper = styled.ul`
   align-items: center;
   height: 68px;
-  margin: 0;
+  margin-left: 220px;
   list-style-type: none;
   display: none;
 

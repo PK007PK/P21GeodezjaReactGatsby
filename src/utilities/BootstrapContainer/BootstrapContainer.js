@@ -19,10 +19,6 @@ const BootstrapContainer = styled.div`
   ${({ theme }) => theme.media.lgAbove} {
     max-width: 1184px;
   }
-
-  ${({ theme }) => theme.media.xlAbove} {
-    max-width: 1400px;
-  }
 `
 
 export default BootstrapContainer

@@ -16,9 +16,9 @@ const bootstrapQueries = {
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `GPI Usługi Geodezyjne`,
+    description: `zzz`,
+    author: `Piotr Krasny`,
     language: "pl",
   },
   plugins: [
@@ -29,7 +29,8 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    "gatsby-plugin-styled-components",
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -47,19 +48,14 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Montserrat`,
-            variants: [`200`, `300`, "700"],
-            subsets: ["latin-ext"],
-          },
-        ],
+        fonts: [`Montserrat\:300,500,700`],
+        display: "swap",
       },
     },
     {
-      resolve: "gatsby-plugin-breakpoints",
+      resolve: `gatsby-plugin-breakpoints`,
       options: {
         queries: bootstrapQueries,
       },

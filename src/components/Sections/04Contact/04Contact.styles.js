@@ -4,18 +4,8 @@ import SectionLayout from "../../../utilities/SectionLayout/SectionLayout"
 
 export const StyledSectionLayout = styled(SectionLayout)`
   position: relative;
-
-  color: white;
-  background-color: ${({ theme }) => theme.color.deepBlue};
-  filter: brightness(130%);
-
-  h2 {
-    color: ${({ theme }) => theme.color.milkWhite};
-  }
-
-  h3 {
-    color: ${({ theme }) => theme.color.carrot};
-  }
+  background-color: rgba(214, 220, 216, 0.35);
+  color: rgba(0, 0, 0, 0.7);
 `
 
 export const ServicesWrapper = styled.div`

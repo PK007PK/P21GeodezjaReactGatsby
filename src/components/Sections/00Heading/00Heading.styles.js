@@ -7,7 +7,7 @@ export const StyledImage = styled(Image)`
 
   ${({ theme }) => theme.media.smAbove} {
     display: block;
-    margin-top: -98px;
+    margin-top: -100px;
     width: 35%;
   }
 
@@ -33,7 +33,7 @@ export const StyledSection = styled.section`
     position: relative;
 
     @media (orientation: landscape) {
-      max-height: calc(100vh - 98px);
+      max-height: 700px;
     }
   }
 `
@@ -42,7 +42,7 @@ export const StyledTxtWrapper = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
   padding: 20px;
 
@@ -63,44 +63,69 @@ export const StyledTxtWrapper = styled.div`
     padding-right: 80px;
   }
 
-  div {
+  .logoWrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-end;
   }
 
-  h1 {
+  .logoBlock {
+    display: block;
+    position: relative;
+  }
+
+  .logo {
+    display: block;
+    position: absolute;
+    left: -45px;
+    bottom: 15px;
+    font-size: 55px;
+    margin-right: 5px;
+    color: ${({ theme }) => theme.color.carrot};
+  }
+
+  .companyName {
+    font-size: 170px;
+    letter-spacing: -17px;
+    line-height: 150px;
+    /* color: gray; */
+    /* color: rgba(0, 0, 0, 0.6); */
+  }
+
+  .sign {
+    font-size: 34px;
+    letter-spacing: -1.3px;
     text-align: right;
-    margin-bottom: 20px;
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 200;
+    font-weight: 700;
+    margin-top: -5px;
+    color: rgba(0, 0, 0, 0.7);
+  }
 
-    span {
-      font-weight: 700;
-      font-size: 150px;
-      line-height: 150px;
-      letter-spacing: -0.1em;
-      display: block;
+  .nameBlock {
+    display: flex;
 
-      ${({ theme }) => theme.media.xlAbove} {
-        font-size: 200px;
-      }
+    .name {
+      text-align: right;
+      font-size: 23px;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.7);
     }
-  }
 
-  p {
-    font-size: 24px;
-    font-weight: 200;
-    margin-top: 10px;
-  }
+    .details {
+      font-weight: 300;
+      font-size: 15px;
+    }
 
-  button {
-    background-color: black;
-    color: white;
-    padding: 10px 30px;
-    border: none;
-    font-weight: 200;
+    i {
+      margin-right: 8px;
+      opacity: 0.6;
+    }
+
+    .partner {
+      margin-left: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
   }
 `

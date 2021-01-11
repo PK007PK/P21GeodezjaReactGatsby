@@ -42,7 +42,7 @@ const RecentNews = () => {
 
   return (
     <SectionLayout>
-      <h2>Aktualności</h2>
+      <h2>Aktualności / galeria zdjęć</h2>
       <TilesWrapper>
         {data.allDatoCmsNews.nodes.map(item => {
           const abc =

@@ -1,21 +1,10 @@
 import styled from "styled-components"
-
 import SectionLayout from "../../../utilities/SectionLayout/SectionLayout"
 
 export const StyledSectionLayout = styled(SectionLayout)`
+  background-color: rgba(214, 220, 216, 0.35);
   position: relative;
-
-  color: white;
-  background-color: ${({ theme }) => theme.color.deepBlue};
-  filter: brightness(130%);
-
-  h2 {
-    color: ${({ theme }) => theme.color.milkWhite};
-  }
-
-  h3 {
-    color: ${({ theme }) => theme.color.carrot};
-  }
+  color: rgba(0, 0, 0, 0.7);
 `
 
 export const ServicesWrapper = styled.div`
@@ -36,21 +25,10 @@ export const ServicesBlock = styled.ul`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    line-height: 1.5;
   }
 
   ${({ theme }) => theme.media.mdAbove} {
     width: 60%;
-  }
-`
-
-export const Service = styled.li`
-  margin-bottom: 20px;
-
-  :nth-last-of-type(-n + 2) {
-    margin-bottom: 0px;
-  }
-
-  ${({ theme }) => theme.media.smAbove} {
-    width: 45%;
   }
 `

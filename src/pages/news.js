@@ -10,7 +10,7 @@ import NewsTile from "../components/NewsTile/NewsTile"
 const NewsPage = ({ data }) => (
   <>
     <Heading txt={"Aktualności"} data={data} />
-    <SectionLayout>
+    <SectionLayout style={{ backgroundColor: "rgba(214, 220, 216, 0.35)" }}>
       <h2>Aktualności</h2>
       <p style={{ marginBottom: "20px" }}>
         Najnowsze informacje z życia firmy, aktualności branżowe{" "}
@@ -39,7 +39,7 @@ const NewsPage = ({ data }) => (
 
 export const query = graphql`
   {
-    file(name: { eq: "tlo05" }) {
+    file(name: { eq: "tlo07" }) {
       childImageSharp {
         fluid(maxWidth: 800, maxHeight: 1200, quality: 90) {
           ...GatsbyImageSharpFluid_tracedSVG

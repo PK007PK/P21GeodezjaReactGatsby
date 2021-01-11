@@ -48,7 +48,6 @@ const PostLayout = ({ data }) => {
       <Image fluid={data.datoCmsNews.featuredImage.fluid} />
       <h1>{data.datoCmsNews.title}</h1>
       <div className="wrapper">
-        <p className="author">Autor: {data.datoCmsNews.author}</p>
         <span className="date">Data: {data.datoCmsNews.date}</span>
       </div>
       <div>
