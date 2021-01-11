@@ -41,7 +41,7 @@ const RecentNews = () => {
   const data = useStaticQuery(query)
 
   return (
-    <SectionLayout>
+    <SectionLayout style={{ backgroundColor: "rgba(214, 220, 216, 0.35)" }}>
       <h2>Aktualności / galeria zdjęć</h2>
       <TilesWrapper>
         {data.allDatoCmsNews.nodes.map(item => {

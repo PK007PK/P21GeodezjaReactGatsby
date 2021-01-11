@@ -2,6 +2,7 @@ import React from "react"
 import slugify from "slugify"
 import { graphql } from "gatsby"
 
+import SEO from "../components/seo"
 import Heading from "../components/Sections/00Heading/00Heading"
 import SectionLayout from "../utilities/SectionLayout/SectionLayout"
 import TilesWrapper from "../utilities/TilesWrapper/TilesWrapper"
@@ -9,6 +10,7 @@ import NewsTile from "../components/NewsTile/NewsTile"
 
 const NewsPage = ({ data }) => (
   <>
+    <SEO title="Aktualności" />
     <Heading txt={"Aktualności"} data={data} />
     <SectionLayout style={{ backgroundColor: "rgba(214, 220, 216, 0.35)" }}>
       <h2>Aktualności</h2>

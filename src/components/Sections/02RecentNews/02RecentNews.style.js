@@ -8,7 +8,7 @@ export const StyledWrapper = styled.div`
 
 export const StyledLink = styled(Link)`
   background-color: ${({ theme }) => theme.color.carrot};
-  color: ${({ theme }) => theme.color.milkWhite};
+  color: white;
   padding: 10px 20px;
   transition: all 0.3s;
 

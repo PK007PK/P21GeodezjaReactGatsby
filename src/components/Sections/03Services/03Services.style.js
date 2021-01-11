@@ -14,7 +14,7 @@ export const StyledSectionLayout = styled(SectionLayout)`
   }
 
   h3 {
-    color: ${({ theme }) => theme.color.carrot};
+    color: #ffccbc;
   }
 `
 

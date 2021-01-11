@@ -17,7 +17,8 @@ const bootstrapQueries = {
 module.exports = {
   siteMetadata: {
     title: `GPI Usługi Geodezyjne`,
-    description: `zzz`,
+    description: `Przedsiębiorstwo Wielobranżowe GPI s.c. Sławomir Plewa, Maciej Rybka. Mapy
+    do celów projektowych, tyczenie obiektów budowlanych, inwentaryacje powykonawcze, pomiary odkształceń, podziały nieruchomości, wyznaczenia i wznowienia granic nieruchomości, pomiar elewacji budynków, obmiary lokali, profile budynkówobmiary lokali, kompleksowa obsługa geodezyjna developerów`,
     author: `Piotr Krasny`,
     language: "pl",
   },
@@ -40,6 +41,18 @@ module.exports = {
         // whitelist: ['whitelist'], // Don't remove this selector
         // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
         // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `GPI Usługi Geodezyjne`,
+        short_name: `GPI`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#1C2331`,
+        display: `minimal-ui`,
+        icon: `src/assets/images/compass.svg`,
       },
     },
     {
