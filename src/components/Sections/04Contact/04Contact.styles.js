@@ -4,7 +4,7 @@ import SectionLayout from "../../../utilities/SectionLayout/SectionLayout"
 
 export const StyledSectionLayout = styled(SectionLayout)`
   position: relative;
-  background-color: #3f729b;
+  background-color: #e65100;
   color: white;
 `
 
