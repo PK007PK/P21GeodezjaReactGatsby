@@ -21,11 +21,11 @@ export const LeadBlock = styled.div`
 `
 
 export const ServicesBlock = styled.ul`
+  line-height: 1.8;
   ${({ theme }) => theme.media.smAbove} {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    line-height: 1.5;
   }
 
   ${({ theme }) => theme.media.mdAbove} {

@@ -115,11 +115,13 @@ export const StyledTxtWrapper = styled.div`
       font-size: 23px;
       font-weight: 500;
       color: rgba(0, 0, 0, 0.7);
+      margin-bottom: 8px;
     }
 
     .details {
-      font-weight: 300;
-      font-size: 15px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.8;
     }
 
     i {

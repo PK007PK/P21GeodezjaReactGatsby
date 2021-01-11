@@ -14,6 +14,7 @@ export const StyledWrapper = styled.div`
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+  text-align: center;
 
   ${({ theme }) => theme.media.smAbove} {
     justify-content: space-between;
@@ -27,7 +28,7 @@ export const StyledWrapper = styled.div`
     }
 
     p {
-      margin-top: 15px;
+      margin: 20px 0;
     }
   }
 `

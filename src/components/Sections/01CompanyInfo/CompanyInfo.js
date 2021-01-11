@@ -12,10 +12,7 @@ const CompanyInfo = () => (
   <StyledSectionLayout>
     <ServicesWrapper>
       <LeadBlock>
-        <h2>
-          Jesteśmy Firmą łączącą 30 lat rodzinnej tradycji z nowoczesnymi
-          technologami pomiarowymi świadczącą kompleksowe usługi geodezyjne
-        </h2>
+        <h2>30 lad doświadczenia. Nowoczesne podejście do biznesu</h2>
       </LeadBlock>
       <ServicesBlock>
         Przedsiębiorstwo Wielobranżowe GPI s.c. Sławomir Plewa, Maciej Rybka w
