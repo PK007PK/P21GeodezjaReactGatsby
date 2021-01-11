@@ -18,7 +18,7 @@ export const StyledImage = styled(Image)`
 `
 
 export const StyledSection = styled.section`
-  height: calc(100vh - 98px);
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -28,6 +28,7 @@ export const StyledSection = styled.section`
 
   ${({ theme }) => theme.media.smAbove} {
     max-height: 540px;
+    height: calc(100vh - 98px);
     background-image: none;
     display: flex;
     position: relative;
@@ -103,6 +104,11 @@ export const StyledTxtWrapper = styled.div`
 
   .nameBlock {
     display: flex;
+    flex-direction: column;
+
+    ${({ theme }) => theme.media.mdAbove} {
+      flex-direction: row;
+    }
 
     .name {
       text-align: right;
@@ -126,6 +132,11 @@ export const StyledTxtWrapper = styled.div`
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+      margin-bottom: 25px;
+
+      ${({ theme }) => theme.media.mdAbove} {
+        margin-bottom: 0px;
+      }
     }
   }
 `

@@ -2,8 +2,8 @@ import styled from "styled-components"
 
 export const StyledBurgerMenu = styled.div`
   position: fixed;
-  top: 50px;
-  right: 10px;
+  top: 15px;
+  right: -18px;
   z-index: 1000;
 `
 
@@ -59,7 +59,7 @@ export const StyledSpan = styled.span`
 
 export const StyledNavigation = styled.div`
   transition: transform 0.3s 0.1s ease-in-out;
-  height: 100vh;
+  height: 105vh;
   width: 250px;
   background-color: black;
   color: white;
@@ -72,7 +72,7 @@ export const StyledNavigation = styled.div`
 
 export const StyledList = styled.ul`
   list-style: none;
-  margin-top: 50px;
+  margin-top: 80px;
 
   li {
     list-style: none;
