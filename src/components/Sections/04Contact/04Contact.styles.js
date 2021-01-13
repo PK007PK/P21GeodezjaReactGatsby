@@ -3,9 +3,9 @@ import styled from "styled-components"
 import SectionLayout from "../../../utilities/SectionLayout/SectionLayout"
 
 export const StyledSectionLayout = styled(SectionLayout)`
+  background-color: rgba(214, 220, 216, 0.35);
   position: relative;
-  background-color: #e65100;
-  color: white;
+  color: rgba(0, 0, 0, 0.7);
 `
 
 export const ServicesWrapper = styled.div`

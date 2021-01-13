@@ -34,13 +34,19 @@ class BurgerMenu extends React.Component {
         <StyledNavigation isActive={this.state.IsBurgerActive}>
           <StyledList>
             <li>
-              <Link to="/">główna</Link>
+              <Link onClick={this.handleClick} to="/">
+                główna
+              </Link>
             </li>
             <li>
-              <Link to="/news">aktualności</Link>
+              <Link onClick={this.handleClick} to="/news">
+                aktualności
+              </Link>
             </li>
             <li>
-              <Link to="/#kontakt">kontakt</Link>
+              <Link onClick={this.handleClick} to="/#kontakt">
+                kontakt
+              </Link>
             </li>
           </StyledList>
         </StyledNavigation>

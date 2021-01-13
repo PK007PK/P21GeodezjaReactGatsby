@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => (
     <Heading data={data} />
     <CompanyInfo />
     <Services />
-    <RecentNews />
+    {/* <RecentNews /> */}
     <Contact />
   </>
 )
